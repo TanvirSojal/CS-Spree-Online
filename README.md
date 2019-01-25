@@ -3,4 +3,6 @@ This project is to get students of my university (Southeast University) engaged 
 
 This season is online and mostly targeted for beginners. My friends and I have made videos on youtube on different topics, demonstrated simulation using slides. Also we coded and explained every line as we go.
 
+This repository contains only my contributions to this project.
+
 Playlist: https://goo.gl/NrhcLe
