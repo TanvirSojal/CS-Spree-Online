@@ -1,5 +1,4 @@
 ![csspree](https://user-images.githubusercontent.com/14056189/51748335-50ab3b00-20d6-11e9-8c89-f6b590413a64.png)
-
 # CS Spree Season 02
 This project is to get students of my university (Southeast University) engaged with problem solving and competitive programming.
 
