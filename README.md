@@ -6,3 +6,6 @@ This season is online and mostly targeted for beginners. My friends and I have m
 This repository contains my contributions to this project.
 
 # Playlist (YouTube): https://goo.gl/NrhcLe
+
+Previous season Materials:
+Season 01: https://github.com/TanvirSojal/csspree
