@@ -13,9 +13,8 @@ bool valid(int x, int y){
 
 void dfs(int x, int y){
     // visit the cell
-//    if (visited[x][y]) return;
+    if (visited[x][y]) return; // this line is not necessary anymore since we are checking validity before calling the function
     visited[x][y] = 1;
-//    if (!(x == 2 && y == 2)) return;
 
     for (int i = 0; i < 8; i++){
        int next_x = x + dx[i];
@@ -45,8 +44,11 @@ void bfs(int sx, int sy){
         for (int i = 0; i < 8; i++){
             int next_x = x + dx[i];
             int next_y = y + dy[i];
-            cout << next_x << " " << next_y << endl;
 
+            if (valid(next_x, next_y)){
+                visited[next_x][next_y] = 1;
+                Q.push({next_x, next_y});
+            }
        }
     }
 }
@@ -54,7 +56,7 @@ void bfs(int sx, int sy){
 
 int main()
 {
-    dfs(2, 2);
+    bfs(2, 2);
     for (int i = 0; i < 5; i++){
         for (int j = 0; j < 5; j++){
             cout << visited[i][j] << " ";
@@ -63,23 +65,3 @@ int main()
     }
     return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-//    for (int i = 0; i < 8; i++){
-//       int next_x = x + dx[i];
-//       int next_y = y + dy[i];
-//
-//       dfs(next_x, next_y);
-//   }
-
-//int dx[] = {-1, 1,  0, 0, -1, -1,  1, 1};
-//int dy[] = {0,  0, -1, 1, -1,  1, -1, 1};
